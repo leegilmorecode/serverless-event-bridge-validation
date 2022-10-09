@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "a155d141-fa8f-4635-a202-a644c3a1bb87",
+    "name": "serverless-event-bridge-validation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"orderId\": \"1234\",\n    \"orderStatus\": \"Created\",\n    \"address\": {\n        \"addressLine1\": \"1 Smith Street\",\n        \"addressLine2\": \"Bridgingham\",\n        \"addressLine3\": \"London\",\n        \"addressLine4\": \"England\",\n        \"addressPostCode\": \"LDN1\"\n    },\n    \"orderLines\": [\n        {\n            \"id\": \"2222\",\n            \"quantity\": 20,\n            \"productId\": \"PROD-111\"\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.eu-west-1.amazonaws.com/prod/orders/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "eu-west-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["prod", "orders", ""]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+.DS_Store
+acme-orders/cdk-outputs.json
